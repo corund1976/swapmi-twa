@@ -1,0 +1,60 @@
+.modal_hidden {
+  transform: translateY(200%);
+
+  transition: transform var(--trans-time) var(--trans-func);
+}
+
+.modal {
+  composes: modal_hidden;
+
+  transform: translateY(0);
+
+  background-color: var(--table-header, #22232b);
+
+  padding-top: 36px;
+  padding-bottom: 24px;
+
+  margin-top: auto;
+
+  position: relative;
+}
+
+.modal::after {
+  content: '';
+  position: absolute;
+  top: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 48px;
+  height: 4px;
+
+  background-color: var(--text-dark, #787e95);
+}
+
+.container {
+  padding: 0;
+}
+@media screen and (min-width: 375px) {
+  .container {
+    padding: 0 calc((100% - 375px) / 2 + 24px);
+  }
+}
+
+.title {
+  color: var(--main-white, #fff);
+
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.2;
+
+  margin-bottom: 12px;
+}
+
+.text {
+  color: var(--text-dark, #787e95);
+
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.4;
+}

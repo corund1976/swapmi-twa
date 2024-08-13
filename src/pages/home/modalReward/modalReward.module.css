@@ -1,0 +1,135 @@
+.modal {
+  composes: modal from global;
+
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.btn_close {
+  composes: btn-close from global;
+}
+
+.bgi {
+  width: 80px;
+  height: 80px;
+
+  margin-bottom: 24px;
+
+  /* background-image: url(/src/images/modalReward/bgi.webp); */
+  background-image: url(/src/images/modalReward/bgi.gif);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.title {
+  color: var(--main-white, #fff);
+  text-align: center;
+
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.2;
+
+  margin-bottom: 12px;
+}
+
+.text {
+  color: var(--text-dark, #787e95);
+  text-align: center;
+
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.4;
+
+  margin-bottom: 16px;
+}
+
+.block {
+  display: flex;
+  justify-content: space-between;
+
+  border-radius: 16px;
+  border: 1px solid var(--opacity-white-10, rgba(255, 255, 255, 0.1));
+
+  padding: 16px 10px;
+
+  width: 100%;
+
+  margin-bottom: 16px;
+
+  position: relative;
+}
+
+.block::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 1px;
+  height: 24px;
+
+  background-color: var(--opacity-white-10, rgba(255, 255, 255, 0.1));
+}
+
+.block > li:not(:last-child) {
+  margin-right: 32px;
+}
+
+.block > li {
+  flex-basis: calc((100% - 32px) / 2);
+}
+
+.label {
+  color: var(--text-dark, #787e95);
+  text-align: center;
+
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.tickets,
+.tokens {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+
+  color: var(--main-white, #fff);
+
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.ticket_img {
+  background-image: url(/src/images/ticket.webp);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+
+  width: 32px;
+  height: 32px;
+
+  margin-right: 8px;
+}
+
+.token_img {
+  background-image: url(/src/images/token.webp);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+
+  width: 32px;
+  height: 32px;
+
+  margin-right: 8px;
+}
+
+.btn_ok {
+  composes: btn-main from global;
+
+  width: 100%;
+  height: 48px;
+}

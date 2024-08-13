@@ -1,0 +1,34 @@
+.section {
+  padding-top: 32px;
+  padding-bottom: 112px;
+}
+
+.section > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wrapper {
+  padding-bottom: 24px;
+
+  width: 100%;
+
+  transform: scale(1);
+
+  visibility: visible;
+  opacity: 1;
+
+  transition:
+    transform var(--trans-time) var(--trans-func),
+    visibility var(--trans-time) var(--trans-func),
+    opacity var(--trans-time) var(--trans-func);
+}
+.wrapper_hidden {
+  composes: wrapper;
+
+  transform: scale(0);
+
+  visibility: hidden;
+  opacity: 0;
+}

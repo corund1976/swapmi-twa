@@ -1,0 +1,61 @@
+:root {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+
+  scroll-behavior: smooth;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  color: var(--main-white, #ffffff);
+  background-color: var(--main-dark, #13141a);
+
+  /* нужно чтобы когда fixed при открытом меню или профиле держать ширину контейнера */
+  left: 0;
+  right: 0;
+
+  height: 100vh;
+
+  margin: 0;
+
+  /* Скрываем scrollbar для IE, Edge и Firefox */
+  -ms-overflow-style: none; /* IE и Edge */
+  scrollbar-width: 0; /* Firefox */
+}
+
+/* Скрываем scrollbar для Chrome, Safari и Opera */
+body::-webkit-scrollbar {
+  display: none;
+}
+
+button,
+input,
+textarea {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+}
+
+::-webkit-scrollbar {
+  width: 2px;
+  height: 0px; /* прячу ползунок горизонт скролл-бара */
+}
+::-webkit-scrollbar-track {
+  background-color: transparent; /* цвет фона у дорожки */
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2) inset; /* тень у дорожки */
+}
+::-webkit-scrollbar-thumb {
+  /* цвет фона у дорожки */
+  background-color: var(--opacity-white-10, rgba(255, 255, 255, 0.1));
+  border-radius: 12px; /* скругление углов */
+  border: none; /* толщина, стиль и цвет рамки */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--opacity-dark-60, rgba(29, 31, 40, 0.6));
+  /* ползунок меняет цвет при наведении */
+}

@@ -1,0 +1,234 @@
+.btn-bubble {
+  position: absolute;
+  top: 0;
+  /* transform: translateY(-100%); */
+
+  border-radius: 50%;
+
+  background-color: transparent;
+
+  background-repeat: no-repeat;
+  background-position: center;
+
+  opacity: 0;
+  visibility: hidden;
+
+  cursor: pointer;
+
+  user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+
+  /* animation-name: movingY, movingX, rotating, scaling, appearance;
+  -webkit-animation-name: movingY, movingX, rotating, scaling, appearance; */
+  animation-name: dropping;
+  -webkit-animation-name: dropping;
+
+  animation-timing-function: linear;
+  -webkit-animation-timing-function: linear;
+
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  /* animation-direction: normal; */
+  /* animation-fill-mode: none; */
+  /* animation-timeline: auto; */
+  /* animation-composition: add; */
+}
+
+@keyframes dropping {
+  0% {
+    transform: translateX(0%)
+      translateY(calc(-1 * (var(--threshold-btm) + 100%))) rotate(0) scale(1);
+    opacity: 0;
+    visibility: hidden;
+  }
+  10% {
+    transform: translateX(0%)
+      translateY(calc(var(--window-height) * 0.2 - var(--threshold-btm)))
+      rotate(30deg) scale(1);
+    opacity: 1;
+    visibility: visible;
+  }
+  20% {
+    transform: translateX(50%)
+      translateY(calc(var(--window-height) * 0.4 - var(--threshold-btm)))
+      rotate(0) scale(1);
+    opacity: 1;
+    visibility: visible;
+  }
+  30% {
+    transform: translateX(0%)
+      translateY(calc(var(--window-height) * 0.6 - var(--threshold-btm)))
+      rotate(-30deg) scale(1);
+    opacity: 1;
+    visibility: visible;
+  }
+  40% {
+    transform: translateX(-50%)
+      translateY(calc(var(--window-height) * 0.8 - var(--threshold-btm)))
+      rotate(0) scale(1);
+    opacity: 1;
+    visibility: visible;
+  }
+  45% {
+    transform: translateX(-25%)
+      translateY(calc(var(--window-height) * 0.9 - var(--threshold-btm)))
+      rotate(30deg) scale(1);
+    opacity: 1;
+    visibility: visible;
+  }
+  50% {
+    transform: translateX(0%)
+      translateY(calc(var(--window-height) - var(--threshold-btm)))
+      rotate(90deg) scale(0.5);
+    opacity: 0;
+    visibility: hidden;
+  }
+  51% {
+    transform: translateX(0%) translateY(-100%) rotate(0) scale(1);
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    transform: translateX(0%) translateY(-100%) rotate(0) scale(1);
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+/* .btn-bubble .clicked-green,
+.btn-bubble .clicked-yellow,
+.btn-bubble .clicked-blue,
+.btn-bubble .clicked-red {
+  transform: rotate(0);
+} */
+
+.clicked-green::after,
+.clicked-yellow::after,
+.clicked-blue::after,
+.clicked-red::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  border-radius: 50%;
+
+  background-color: transparent;
+
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+
+  animation-name: booming;
+  animation-timing-function: ease-in-out;
+  animation-duration: 0.5s;
+}
+
+.clicked-green::after {
+  background-image: radial-gradient(
+    transparent,
+    rgba(98, 234, 153, 0.1) 63%,
+    #62ea99 100%
+  );
+}
+
+.clicked-yellow::after {
+  background-image: radial-gradient(
+    transparent,
+    rgba(199, 234, 98, 0.1) 63%,
+    #c7ea62 100%
+  );
+}
+
+.clicked-blue::after {
+  background-image: radial-gradient(
+    transparent,
+    rgba(96, 179, 255, 0.1) 63%,
+    #60b3ff 100%
+  );
+}
+
+.clicked-red::after {
+  background-image: radial-gradient(
+    transparent,
+    rgba(196, 132, 35, 0.1) 63%,
+    #c48423 100%
+  );
+}
+
+@keyframes booming {
+  from {
+    transform: scale(1);
+    opacity: 1;
+    visibility: visible;
+  }
+  50% {
+    transform: scale(1.7);
+    opacity: 1;
+    visibility: visible;
+  }
+  to {
+    transform: scale(1.7);
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.counter-green::before,
+.counter-yellow::before,
+.counter-blue::before,
+.counter-red::before {
+  position: absolute;
+  /* top: 50%;
+  left: 50%; */
+
+  font-family: 'Montserrat';
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1;
+
+  /* transform: translate(100px, 100px); */
+
+  animation-name: flying;
+  animation-timing-function: ease-in-out;
+  animation-duration: 1.5s;
+}
+
+.counter-green::before {
+  content: '+1';
+  color: var(--main-green, #62ea99);
+}
+.counter-yellow::before {
+  content: '+2';
+  color: var(--main-yellow, #c7ea62);
+}
+.counter-blue::before {
+  content: '+3';
+  color: var(--main-blue, #6288ea);
+}
+.counter-red::before {
+  content: '-5';
+  color: var(--main-red, #c48423);
+}
+
+@keyframes flying {
+  from {
+    transform: translate(100%, -100%);
+    opacity: 1;
+    visibility: visible;
+  }
+  to {
+    transform: translate(100px, -100px);
+    opacity: 0;
+    visibility: hidden;
+  }
+}

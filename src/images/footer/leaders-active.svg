@@ -1,0 +1,22 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Icon_leaderboard/Active">
+<rect id="Rectangle 161124066" x="9" y="8" width="6" height="14" rx="1" fill="url(#paint0_linear_3264_22566)"/>
+<rect id="Rectangle 161124067" x="2" y="11" width="6" height="11" rx="1" fill="url(#paint1_linear_3264_22566)"/>
+<rect id="Rectangle 161124068" x="16" y="13" width="6" height="9" rx="1" fill="url(#paint2_linear_3264_22566)"/>
+<path id="Star 7" d="M11.5245 2.46352C11.6741 2.00287 12.3259 2.00287 12.4755 2.46353L12.7858 3.41844C12.8527 3.62445 13.0447 3.76393 13.2613 3.76393H14.2654C14.7497 3.76393 14.9511 4.38374 14.5593 4.66844L13.747 5.25861C13.5717 5.38593 13.4984 5.61162 13.5653 5.81763L13.8756 6.77254C14.0253 7.2332 13.498 7.61626 13.1062 7.33156L12.2939 6.74139C12.1186 6.61407 11.8814 6.61407 11.7061 6.74139L10.8938 7.33156C10.502 7.61626 9.97471 7.2332 10.1244 6.77254L10.4347 5.81763C10.5016 5.61162 10.4283 5.38593 10.253 5.25861L9.44072 4.66844C9.04887 4.38374 9.25025 3.76393 9.73462 3.76393H10.7387C10.9553 3.76393 11.1473 3.62445 11.2142 3.41844L11.5245 2.46352Z" fill="#5EE594"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_3264_22566" x1="9.7916" y1="10.015" x2="17.2854" y2="13.1247" gradientUnits="userSpaceOnUse">
+<stop stop-color="#62EA99"/>
+<stop offset="1" stop-color="#30B264"/>
+</linearGradient>
+<linearGradient id="paint1_linear_3264_22566" x1="2.5" y1="11.5" x2="10.0675" y2="15.7607" gradientUnits="userSpaceOnUse">
+<stop offset="0.544925" stop-color="#62EA99"/>
+<stop offset="1" stop-color="#30B264"/>
+</linearGradient>
+<linearGradient id="paint2_linear_3264_22566" x1="23.125" y1="22.7875" x2="14.4143" y2="19.0158" gradientUnits="userSpaceOnUse">
+<stop stop-color="#62EA99"/>
+<stop offset="0.826938" stop-color="#229551"/>
+</linearGradient>
+</defs>
+</svg>

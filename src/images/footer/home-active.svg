@@ -1,0 +1,17 @@
+<svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Icon_home/Initial">
+<path id="Rectangle 161124063" d="M4.80005 12.5H19.2L16.8 22.1H7.20005L4.80005 12.5Z" fill="url(#paint0_linear_4_188)"/>
+<path id="Rectangle 161124064" d="M11.034 2.41519L1.9243 11.732C1.27119 12.3999 1.80926 13.5191 2.73881 13.4261L11.9005 12.51C11.9667 12.5033 12.0333 12.5033 12.0995 12.51L21.1634 13.4163C22.104 13.5104 22.6379 12.3675 21.9622 11.7065L12.4483 2.39948C12.0535 2.0132 11.4202 2.02024 11.034 2.41519Z" fill="url(#paint1_linear_4_188)"/>
+<rect id="Rectangle 161124065" x="10.8" y="16.1" width="2.4" height="4.8" rx="1.2" fill="#196639"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_4_188" x1="21.9" y1="22.94" x2="9.16344" y2="10.5317" gradientUnits="userSpaceOnUse">
+<stop stop-color="#62EA99"/>
+<stop offset="0.826938" stop-color="#229551"/>
+</linearGradient>
+<linearGradient id="paint1_linear_4_188" x1="3.16642" y1="3.42715" x2="10.5635" y2="17.7517" gradientUnits="userSpaceOnUse">
+<stop stop-color="#62EA99"/>
+<stop offset="1" stop-color="#30B264"/>
+</linearGradient>
+</defs>
+</svg>

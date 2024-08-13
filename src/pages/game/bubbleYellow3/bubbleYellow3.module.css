@@ -1,0 +1,25 @@
+.yellow_3 {
+  composes: btn-bubble from global;
+
+  left: calc((100% - 375px) / 2 + 256px);
+
+  border: 1px solid #c7ea62;
+
+  background-image: url(/src/images/game/btn-bgi-yellow.svg),
+    radial-gradient(transparent, rgba(199, 234, 98, 0.1) 63%, #c7ea62 100%);
+  background-size: 20px, contain;
+
+  width: 64px;
+  height: 64px;
+}
+
+.yellow_3 {
+  animation-duration: var(--animation-duration-yellow-3);
+  -webkit-animation-duration: var(--animation-duration-yellow-3);
+
+  animation-delay: var(--animation-delay-yellow-3);
+  -webkit-animation-delay: var(--animation-delay-yellow-3);
+
+  animation-play-state: var(--animation-play-state-yellow-3);
+  -webkit-animation-play-state: var(--animation-play-state-yellow-3);
+}

@@ -1,0 +1,11 @@
+<Firework
+  maxWidth={5}
+  maxHeight={5}
+  numberOfPieces={500}
+  maxDistanceX={300}
+  maxDistanceY={700}
+  maxTime={5}
+  color='orange'
+  dropShadow={true}
+  recycle={displayFirework}
+/>

@@ -1,0 +1,151 @@
+.section {
+  padding-top: 32px;
+  padding-bottom: 112px;
+
+  position: relative;
+}
+
+.section > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+
+  margin-bottom: 8px;
+}
+
+.name {
+  color: #fff;
+
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.4;
+
+  margin-bottom: 32px;
+}
+
+.block_balance {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  border-radius: 16px;
+  background-color: #16181e;
+  background-image: radial-gradient(
+      60.93% 18.13% at 73.32% 14.25%,
+      rgba(98, 234, 153, 0.1) 0%,
+      rgba(98, 234, 153, 0) 100%
+    ),
+    radial-gradient(
+      80.73% 33.1% at 0% 1.33%,
+      rgba(98, 234, 153, 0.3) 0%,
+      rgba(98, 234, 153, 0) 100%
+    ),
+    radial-gradient(
+      145.96% 140.02% at 2% 0%,
+      rgba(98, 234, 153, 0.3) 0%,
+      rgba(98, 234, 153, 0) 66.39%
+    );
+
+  padding: 40px;
+
+  width: 100%;
+
+  margin-bottom: 8px;
+}
+
+.label {
+  color: var(--text-dark, #787e95);
+
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.balance {
+  display: flex;
+  align-items: center;
+
+  color: var(--main-white, #fff);
+
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.token_img {
+  background-image: url(/src/images/token.webp);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+
+  width: 32px;
+  height: 32px;
+
+  margin-right: 8px;
+}
+
+.block_tickets {
+  display: flex;
+  justify-content: space-between;
+
+  border-radius: 16px;
+  border: 1px solid var(--opacity-white-10, rgba(255, 255, 255, 0.1));
+
+  padding: 16px;
+
+  width: 100%;
+
+  margin-bottom: 8px;
+}
+
+.tickets {
+  display: flex;
+  align-items: flex-end;
+
+  color: var(--main-white, #fff);
+
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.ticket_img {
+  background-image: url(/src/images/ticket.webp);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+
+  width: 32px;
+  height: 32px;
+
+  margin-right: 8px;
+}
+
+.btn_play {
+  composes: btn-main from global;
+
+  min-width: 134px;
+  height: 48px;
+}
+
+.btn_withdraw {
+  composes: btn-scnd from global;
+
+  min-width: 100%;
+  height: 48px;
+
+  margin-bottom: 8px;
+}
+
+.warning {
+  composes: warning from global;
+}
+
+.warning > a {
+  color: var(--main-green, #62ea99);
+}

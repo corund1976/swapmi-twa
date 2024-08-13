@@ -1,0 +1,36 @@
+.hero {
+  text-align: center;
+
+  background-image: url(/src/images/about/hero/bgi.webp),
+    url(/src/images/about/hero/bg.webp);
+  background-repeat: no-repeat;
+  background-size: 375px, contain;
+  background-position: top center;
+
+  padding-top: 283px;
+
+  margin-bottom: 24px;
+}
+
+.container {
+  padding-left: calc((100% - 375px) / 2 + 24px);
+  padding-right: calc((100% - 375px) / 2 + 24px);
+}
+
+.title {
+  color: var(--main-white, #fff);
+
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.2;
+
+  margin-bottom: 16px;
+}
+
+.text {
+  color: var(--text-dark, #787e95);
+
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.4;
+}

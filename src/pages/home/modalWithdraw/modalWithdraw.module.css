@@ -1,0 +1,81 @@
+.modal {
+  composes: modal from global;
+
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.btn_close {
+  composes: btn-close from global;
+}
+
+.title {
+  color: var(--main-white, #fff);
+  text-align: center;
+
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.2;
+
+  width: 100%;
+
+  margin-bottom: 12px;
+}
+
+.text {
+  color: var(--text-dark, #787e95);
+  text-align: center;
+
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.4;
+
+  width: 100%;
+
+  margin-bottom: 24px;
+}
+
+.form {
+  width: 100%;
+}
+
+.input_wrapper {
+  margin-bottom: 8px;
+
+  position: relative;
+}
+
+[id='withdrawInputEmail'] {
+  margin-bottom: 16px;
+}
+
+.btn_max {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  bottom: 4px;
+
+  composes: btn-scnd from global;
+
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.btn_ok {
+  composes: btn-main from global;
+
+  width: 100%;
+  height: 48px;
+}
+
+.bgi {
+  width: 80px;
+  height: 80px;
+
+  margin-bottom: 24px;
+
+  background-image: url(/src/images/modalWithdraw/bgi.gif);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}

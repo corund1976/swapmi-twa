@@ -1,0 +1,93 @@
+.modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+
+  background-color: rgba(19, 20, 26, 0.2);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  padding-top: 53%;
+  padding-bottom: 32px;
+}
+
+.btn_close {
+  composes: btn-close-white from global;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding-left: 8px;
+  padding-right: 8px;
+
+  height: 100%;
+}
+@media screen and (min-width: 375px) {
+  .container {
+    padding-left: calc((100% - 375px) / 2 + 24px);
+    padding-right: calc((100% - 375px) / 2 + 24px);
+  }
+}
+
+.title {
+  color: var(--main-white, #fff);
+  text-align: center;
+
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.2;
+
+  margin-bottom: 24px;
+}
+
+.label {
+  color: var(--text-dark, #787e95);
+
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.value {
+  display: flex;
+  align-items: center;
+
+  margin-bottom: auto;
+}
+
+.value > img {
+  width: 32px;
+  height: 32px;
+
+  margin-right: 8px;
+}
+
+.value > p {
+  color: var(--main-white, #fff);
+
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.btn_invite {
+  composes: btn-scnd from global;
+
+  width: 100%;
+  height: 48px;
+
+  margin-bottom: 8px;
+}
+
+.btn_play {
+  composes: btn-main from global;
+
+  width: 100%;
+  height: 48px;
+}

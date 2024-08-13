@@ -1,0 +1,108 @@
+:root {
+  --main-dark: #13141a;
+  --main-white: #ffffff;
+  --main-green: #62ea99;
+  --main-red: #c48423;
+  --main-blue: #6288ea;
+  --main-yellow: #c7ea62;
+  --text-dark: #787e95;
+  --cards-dark: #1c2026;
+  --table-header: #22232b;
+
+  --opacity-white-10: rgba(255, 255, 255, 0.1);
+  --opacity-white-20: rgba(255, 255, 255, 0.2);
+  --opacity-dark-20: rgba(29, 31, 40, 0.2);
+  --opacity-dark-60: rgba(29, 31, 40, 0.6);
+  --opacity-green-20: rgba(98, 234, 153, 0.2);
+  --opacity-red-20: rgba(196, 132, 35, 0.2);
+  --opacity-blue-20: rgba(98, 136, 234, 0.2);
+
+  --gradient-button-mn: linear-gradient(
+    to bottom,
+    rgba(98, 234, 153, 0) 0%,
+    rgba(98, 234, 153, 0.1) 100%
+  );
+  --gradient-button-sc: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.1) 100%
+  );
+  --gradient-cards: linear-gradient(
+    103deg,
+    rgba(29, 31, 40, 0.6) 1.3%,
+    rgba(29, 31, 40, 0) 100%
+  );
+
+  --trans-time: 300ms;
+  --trans-func: cubic-bezier(0.4, 0, 0.2, 1);
+
+  --window-height: 100%;
+
+  --progress-percent-width: 0px;
+
+  --threshold-btm: 180px;
+
+  --animation-play-state-green-1: 'running';
+  --animation-duration-green-1: 8s;
+  --animation-delay-green-1: 0s;
+
+  --animation-play-state-green-2: 'running';
+  --animation-duration-green-2: 8s;
+  --animation-delay-green-2: 2s;
+
+  --animation-play-state-green-3: 'running';
+  --animation-duration-green-3: 8s;
+  --animation-delay-green-3: 4s;
+
+  --animation-play-state-green-4: 'running';
+  --animation-duration-green-4: 8s;
+  --animation-delay-green-4: 6s;
+
+  --animation-play-state-yellow-1: 'running';
+  --animation-duration-yellow-1: 8s;
+  --animation-delay-yellow-1: 1s;
+
+  --animation-play-state-yellow-2: 'running';
+  --animation-duration-yellow-2: 8s;
+  --animation-delay-yellow-2: 3s;
+
+  --animation-play-state-yellow-3: 'running';
+  --animation-duration-yellow-3: 8s;
+  --animation-delay-yellow-3: 5s;
+
+  --animation-play-state-yellow-4: 'running';
+  --animation-duration-yellow-4: 8s;
+  --animation-delay-yellow-4: 7s;
+
+  --animation-play-state-blue-1: 'running';
+  --animation-duration-blue-1: 8s;
+  --animation-delay-blue-1: 0.5s;
+
+  --animation-play-state-blue-2: 'running';
+  --animation-duration-blue-2: 8s;
+  --animation-delay-blue-2: 2.5s;
+
+  --animation-play-state-blue-3: 'running';
+  --animation-duration-blue-3: 8s;
+  --animation-delay-blue-3: 4.5s;
+
+  --animation-play-state-blue-4: 'running';
+  --animation-duration-blue-4: 8s;
+  --animation-delay-blue-4: 6.5s;
+
+  --animation-play-state-red-1: 'running';
+  --animation-duration-red-1: 8s;
+  --animation-delay-red-1: 1.5s;
+
+  --animation-play-state-red-2: 'running';
+  --animation-duration-red-2: 8s;
+  --animation-delay-red-2: 3.5s;
+
+  --animation-play-state-red-3: 'running';
+  --animation-duration-red-3: 8s;
+  --animation-delay-red-3: 5.5s;
+
+  --animation-play-state-red-4: 'running';
+  --animation-duration-red-4: 8s;
+  --animation-delay-red-4: 7.5s;
+}

@@ -1,0 +1,93 @@
+/* [id='NotiflixNotifyWrap'] { */
+#NotiflixNotifyWrap {
+  inset: 72px 16px auto auto !important;
+
+  width: 343px !important;
+}
+@media screen and (min-width: 768px) {
+  #NotiflixNotifyWrap {
+    inset: 92px 24px auto auto !important;
+
+    width: 300px !important;
+  }
+}
+@media screen and (min-width: 1280px) {
+  #NotiflixNotifyWrap {
+    inset: auto 24px 24px auto !important;
+  }
+}
+
+#NotiflixNotifyWrap > div {
+  position: relative;
+
+  border: 1px solid var(--opacity-white-10, rgba(255, 255, 255, 0.1));
+
+  padding-left: 64px;
+
+  min-height: 56px;
+}
+
+#NotiflixNotifyWrap > div::before {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 4px;
+
+  width: 48px;
+  height: 48px;
+
+  border-radius: 8px;
+
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position: center;
+}
+
+/* BGs */
+.notiflix-notify-success::before {
+  background-color: var(--main-green, #62ea99);
+  background-image: url(/src/images/notiflix/checkbox.svg);
+}
+
+.notiflix-notify-failure::before {
+  background-color: red;
+  background-image: url(/src/images/notiflix/close-grey.svg);
+}
+
+.notiflix-notify-warning::before {
+  background-color: var(--main-red, #c48423);
+  background-image: url(/src/images/notiflix/close-grey.svg);
+}
+
+/* Icons */
+.notiflix-notify-checkbox::before {
+  background-image: url(/src/images/notiflix/checkbox.svg);
+}
+
+.notiflix-notify-close::before {
+  background-image: url(/src/images/notiflix/close-grey.svg);
+}
+
+.notiflix-notify-delete::before {
+  background-image: url(/src/images/notiflix/delete.svg);
+}
+
+.notiflix-notify-email::before {
+  background-image: url(/src/images/notiflix/email.svg);
+}
+
+.notiflix-notify-hand::before {
+  background-image: url(/src/images/notiflix/hand.svg);
+}
+
+.notiflix-notify-pause::before {
+  background-image: url(/src/images/notiflix/pause.svg);
+}
+
+.notiflix-notify-settings::before {
+  background-image: url(/src/images/notiflix/settings.svg);
+}
+
+.notiflix-notify-start::before {
+  background-image: url(/src/images/notiflix/start.svg);
+}

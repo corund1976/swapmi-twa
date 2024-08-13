@@ -1,0 +1,88 @@
+[id='inviteInputSearch'] {
+  margin-bottom: 8px;
+}
+
+.friends_list {
+  width: 100%;
+}
+
+.friends_list > li {
+  border-radius: 16px;
+  border: 1px solid var(--opacity-white-10, rgba(255, 255, 255, 0.1));
+
+  background-image: var(
+    --gradient-cards,
+    linear-gradient(
+      103deg,
+      rgba(29, 31, 40, 0.6) 1.3%,
+      rgba(29, 31, 40, 0) 100%
+    )
+  );
+  backdrop-filter: blur(27px);
+  -webkit-backdrop-filter: blur(27px);
+
+  padding: 16px;
+
+  display: flex;
+  align-items: center;
+}
+
+.friends_list > li:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+
+  margin-right: 8px;
+}
+
+.name {
+  color: var(--main-white, #ffffff);
+
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 140%;
+
+  margin-bottom: 2px;
+}
+
+.reward_tickets_wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.reward_tickets_wrapper > li {
+  display: flex;
+  align-items: center;
+}
+
+.reward_tickets_wrapper > li:not(:last-child) {
+  margin-right: 8px;
+}
+
+.reward_tickets_wrapper > li > img {
+  width: 18px;
+  height: 18p;
+
+  margin-left: 4px;
+  margin-right: 2px;
+}
+
+.label {
+  color: var(--text-dark, #787e95);
+  text-align: center;
+
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.value {
+  color: var(--main-white, #fff);
+
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 130%;
+}

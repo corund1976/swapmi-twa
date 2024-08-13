@@ -1,0 +1,139 @@
+.list {
+  width: 100%;
+}
+
+.list > li {
+  border-radius: 16px;
+  border: 1px solid var(--opacity-white-10, rgba(255, 255, 255, 0.1));
+
+  backdrop-filter: blur(27px);
+  -webkit-backdrop-filter: blur(27px);
+
+  padding: 16px;
+
+  display: flex;
+  align-items: center;
+}
+.user_item {
+  background-color: var(--table-header, #22232b);
+}
+.other_items {
+  background-image: var(
+    --gradient-cards,
+    linear-gradient(
+      103deg,
+      rgba(29, 31, 40, 0.6) 1.3%,
+      rgba(29, 31, 40, 0) 100%
+    )
+  );
+}
+
+.list > li:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.position {
+  color: var(--main-white, #fff);
+  text-align: center;
+
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.3;
+
+  background-image: url(/src/images/leaders/position-bgi.webp);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+
+  padding-top: 9px;
+
+  width: 40px;
+  height: 40px;
+
+  margin-right: 16px;
+}
+
+.avatar {
+  border-radius: 50%;
+
+  width: 40px;
+  height: 40px;
+
+  margin-right: 8px;
+
+  overflow: hidden;
+}
+
+.list > li > div {
+  flex-grow: 1;
+  position: relative;
+}
+
+.name {
+  color: var(--main-white, #fff);
+
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.4;
+
+  max-width: 200px;
+
+  margin-bottom: 2px;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.week_rounds_wrapper {
+  display: flex;
+  align-items: flex-end;
+}
+
+.label {
+  color: var(--text-dark, #787e95);
+
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.4;
+
+  margin-right: 4px;
+}
+
+.token_img,
+.round_img {
+  width: 16px;
+  height: 16px;
+
+  margin-right: 2px;
+}
+
+.value {
+  color: var(--main-white, #fff);
+
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.gap {
+  width: 16px;
+}
+
+.you {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  color: var(--main-green, #62ea99);
+  text-transform: capitalize;
+
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.3;
+
+  border-radius: 16px;
+  background-color: var(--opacity-green-20, rgba(98, 234, 153, 0.2));
+
+  padding: 2px 8px;
+}

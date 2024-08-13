@@ -1,0 +1,60 @@
+.game {
+  text-align: center;
+
+  padding-bottom: 112px;
+}
+
+.container {
+  padding-left: calc((100% - 375px) / 2 + 24px);
+  padding-right: calc((100% - 375px) / 2 + 24px);
+}
+
+.block {
+  border-radius: 16px;
+  border: 1px solid var(--opacity-white-10, rgba(255, 255, 255, 0.1));
+
+  background-image: url(/src/images/about/game/bg.webp),
+    var(
+      --gradient-cards,
+      linear-gradient(
+        103deg,
+        rgba(29, 31, 40, 0.6) 1.3%,
+        rgba(29, 31, 40, 0) 100%
+      )
+    );
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position:
+    top center,
+    center;
+  backdrop-filter: blur(27px);
+
+  padding: 201px 16px 16px;
+}
+
+.title {
+  color: var(--main-white, #fff);
+
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.4;
+
+  margin-bottom: 12px;
+}
+
+.text {
+  color: var(--text-dark, #787e95);
+
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.4;
+
+  margin-bottom: 24px;
+}
+
+.btn_play {
+  composes: btn-main from global;
+
+  width: 100%;
+  height: 48px;
+}

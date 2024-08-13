@@ -1,0 +1,55 @@
+.section {
+  background-image: url(/src/images/game/bgi-btm.gif);
+  background-repeat: no-repeat;
+  background-size: 430px;
+  background-position: bottom center;
+
+  height: var(--window-height);
+
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -khtml-user-select: none;
+}
+
+.bg_top {
+  position: relative;
+  z-index: -1;
+
+  background-image: url(/src/images/game/bg-top.webp);
+  background-repeat: no-repeat;
+  background-size: 1020px;
+  background-position: 50% 0;
+
+  height: 380px;
+
+  animation-name: sliding;
+  -webkit-animation-name: sliding;
+
+  animation-duration: 4s;
+  -webkit-animation-duration: 4s;
+
+  /* animation-timing-function: ease-in-out;
+  -webkit-animation-timing-function: ease-in-out; */
+
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+}
+
+@keyframes sliding {
+  0% {
+    background-position: 50% 0;
+  }
+  50% {
+    background-position: calc(50% + 150px) 0;
+  }
+  100% {
+    background-position: 50% 0;
+  }
+}
+
+.section > button {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+}

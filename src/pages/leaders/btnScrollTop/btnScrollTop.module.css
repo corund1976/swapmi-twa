@@ -1,0 +1,52 @@
+.button_hidden {
+  position: sticky;
+  bottom: 86px;
+  left: calc((100% - 375px) / 2 + 319px);
+  z-index: 5;
+
+  border-radius: 16px;
+  border: none;
+
+  background-color: transparent;
+
+  background-image: none;
+
+  width: 48px;
+  height: 48px;
+
+  visibility: hidden;
+  opacity: 0;
+
+  transition:
+    background-color var(--trans-time) var(--trans-func),
+    background-image var(--trans-time) var(--trans-func),
+    visibility var(--trans-time) var(--trans-func),
+    opacity var(--trans-time) var(--trans-func);
+}
+
+.button {
+  composes: button_hidden;
+
+  border-radius: 8px;
+  border: 1px solid var(--opacity-white-20, rgba(255, 255, 255, 0.2));
+
+  background-color: transparent;
+  background-image: url(/src/images/arrow-up.svg),
+    var(
+      --gradient-button-mn,
+      linear-gradient(
+        to bottom,
+        rgba(98, 234, 153, 0) 0%,
+        rgba(98, 234, 153, 0.1) 100%
+      )
+    );
+  background-repeat: no-repeat;
+  background-size: 20px, cover;
+  background-position: center;
+
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  visibility: visible;
+  opacity: 1;
+}

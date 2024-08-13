@@ -1,0 +1,25 @@
+.blue_1 {
+  composes: btn-bubble from global;
+
+  left: calc((100% - 375px) / 2 + 42px);
+
+  border: 1px solid #60b3ff;
+
+  background-image: url(/src/images/game/btn-bgi-blue.svg),
+    radial-gradient(transparent, rgba(96, 179, 255, 0.1) 63%, #60b3ff 100%);
+  background-size: 20px, contain;
+
+  width: 80px;
+  height: 80px;
+}
+
+.blue_1 {
+  animation-duration: var(--animation-duration-blue-1);
+  -webkit-animation-duration: var(--animation-duration-blue-1);
+
+  animation-delay: var(--animation-delay-blue-1);
+  -webkit-animation-delay: var(--animation-delay-blue-1);
+
+  animation-play-state: var(--animation-play-state-blue-1);
+  -webkit-animation-play-state: var(--animation-play-state-blue-1);
+}

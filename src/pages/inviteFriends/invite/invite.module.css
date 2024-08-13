@@ -1,0 +1,50 @@
+.wrapper {
+  position: fixed;
+  bottom: 86px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 359px;
+  height: 48px;
+
+  display: flex;
+}
+
+.wrapper_ios {
+  composes: wrapper;
+  bottom: 86px;
+}
+
+.btn_invite {
+  flex-grow: 1;
+  height: 100%;
+
+  composes: btn-main from global;
+}
+
+.btn_copy {
+  border-radius: 6px;
+  border: 1px solid var(--opacity-white-20, rgba(255, 255, 255, 0.2));
+
+  background-color: transparent;
+  background-image: url(/src/images/copy.svg),
+    var(
+      --gradient-button-sc,
+      linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0.1) 100%
+      )
+    );
+  background-repeat: no-repeat;
+  background-size: 24px, cover;
+  background-position: center;
+
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  width: 48px;
+  height: 48px;
+
+  margin-left: 8px;
+}
